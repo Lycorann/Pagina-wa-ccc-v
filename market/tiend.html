@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Carrito de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html"><h1 class="logo">LCR NFL</h1></a>
+            <div class="cart-toggle" id="cartToggle">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <button class="btnLogin">Sesion</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/audikc.webp" alt="Jersey Kansas City Chiefs Audí KC">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jersey Kansas City Chiefs</h3>
+                    <p class="product-price">$89.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #E31837;" data-color="Rojo"></button>
+                    <button class="color-option" style="background-color: #FFB612;" data-color="Amarillo"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Jersey inspirado en los Kansas City Chiefs, con diseño moderno y materiales transpirables de alto rendimiento.</p>
+                    <button class="add-to-cart" data-id="1" data-name="Jersey Kansas City Chiefs" data-price="89.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/jersey.avif" alt="Jersey NFL edición especial">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jersey Kansas City Chiefs</h3>
+                    <p class="product-price">$84.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #E31837;" data-color="Rojo"></button>
+                    <button class="color-option" style="background-color: #FFB612;" data-color="Amarillo"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Jersey oficial de los Chiefs con acabado premium. Ideal para apoyar al equipo con orgullo y estilo.</p>
+                    <button class="add-to-cart" data-id="2" data-name="Jersey NFL Edición Especial" data-price="84.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/vikingsjersey.jpg" alt="Jersey Minnesota Vikings">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jersey Minnesota Vikings</h3>
+                    <p class="product-price">$89.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #4F2683;" data-color="Púrpura"></button>
+                    <button class="color-option" style="background-color: #FFC62F;" data-color="Amarillo"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Jersey oficial de los Vikings con acabado premium. Ideal para apoyar al equipo con orgullo y estilo.</p>
+                    <button class="add-to-cart" data-id="3" data-name="Jersey Minnesota Vikings" data-price="89.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/polo.webp" alt="Polo NFL">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Polo NFL Training</h3>
+                    <p class="product-price">$59.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #2C3E50;" data-color="Negro"></button>
+                    <button class="color-option" style="background-color: #7F8C8D;" data-color="Gris"></button>
+                    <button class="color-option" style="background-color: #3498DB;" data-color="Azul"></button>
+                    </div>
+                    <p class="product-description">Polo deportivo de entrenamiento con logotipo NFL bordado. Ligero, cómodo y con estilo moderno.</p>
+                    <button class="add-to-cart" data-id="4" data-name="Polo NFL Training" data-price="59.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/gorra.jpg" alt="Gorra NFL edición clásica">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gorra Chiefs Clásica</h3>
+                    <p class="product-price">$29.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    <button class="color-option" style="background-color: #1ABC9C;" data-color="Verde Agua"></button>
+                    </div>
+                    <p class="product-description">Gorra ajustable con logo de los Chiefs bordado. Ideal para uso diario o apoyar a tu equipo favorito con estilo.</p>
+                    <button class="add-to-cart" data-id="5" data-name="Gorra NFL Clásica" data-price="29.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/billetera.jpeg" alt="Billetera NFL de cuero">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Billetera NFL</h3>
+                    <p class="product-price">$39.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #6E2C00;" data-color="Marrón"></button>
+                    <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                    <button class="color-option" style="background-color: #A04000;" data-color="Café Claro"></button>
+                    </div>
+                    <p class="product-description">Billetera de cuero genuino con emblema NFL grabado. Elegante, resistente y con múltiples compartimentos.</p>
+                    <button class="add-to-cart" data-id="6" data-name="Billetera NFL" data-price="39.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/49ersjersey.avif" alt="Jersey San Francisco 49ers">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jersey San Francisco 49ers</h3>
+                    <p class="product-price">$89.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #AA0000;" data-color="Rojo"></button>
+                    <button class="color-option" style="background-color: #D4AF37;" data-color="Dorado"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Jersey clásico de los 49ers con detalles dorados y corte atlético. Perfecto para fanáticos fieles.</p>
+                    <button class="add-to-cart" data-id="7" data-name="Jersey San Francisco 49ers" data-price="89.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/cowboysjersey.avif" alt="Jersey Dallas Cowboys">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jersey Dallas Cowboys</h3>
+                    <p class="product-price">$89.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #0D254C;" data-color="Azul Marino"></button>
+                    <button class="color-option" style="background-color: #B0B7BC;" data-color="Gris"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Jersey conmemorativo de los Cowboys con diseño clásico y materiales transpirables de primera calidad.</p>
+                    <button class="add-to-cart" data-id="8" data-name="Jersey Dallas Cowboys" data-price="89.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/hoodiechiefs.jpg" alt="Sudadera Kansas City Chiefs">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Hoodie Kansas City Chiefs</h3>
+                    <p class="product-price">$69.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #E31837;" data-color="Rojo"></button>
+                    <button class="color-option" style="background-color: #FFB612;" data-color="Amarillo"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Sudadera con capucha de los Chiefs. Suave por dentro, ideal para clima frío y lucir el espíritu del campeón.</p>
+                    <button class="add-to-cart" data-id="9" data-name="Hoodie Kansas City Chiefs" data-price="69.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/wilson.webp" alt="Balón oficial NFL Wilson">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Balón NFL Wilson</h3>
+                    <p class="product-price">$49.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #8B4513;" data-color="Marrón"></button>
+                    <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                    <button class="color-option" style="background-color: #C19A6B;" data-color="Beige"></button>
+                    </div>
+                    <p class="product-description">Balón oficial de la NFL fabricado por Wilson. Ideal para entrenamiento, juego o colección.</p>
+                    <button class="add-to-cart" data-id="10" data-name="Balón NFL Wilson" data-price="49.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/gorraraiders.jpg" alt="Gorra Las Vegas Raiders">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gorra Las Vegas Raiders</h3>
+                    <p class="product-price">$34.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                    <button class="color-option" style="background-color: #A6A6A6;" data-color="Gris"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Gorra oficial Raiders con logo bordado y visera curva. Material resistente y cómodo.</p>
+                    <button class="add-to-cart" data-id="11" data-name="Gorra Las Vegas Raiders" data-price="34.99">Agregar al Carrito</button>
+                </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/hoodieeagles.avif" alt="Sudadera Philadelphia Eagles">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Hoodie Philadelphia Eagles</h3>
+                    <p class="product-price">$69.99</p>
+                    <div class="color-options">
+                    <span>Colores:</span>
+                    <button class="color-option" style="background-color: #004C54;" data-color="Verde Águila"></button>
+                    <button class="color-option" style="background-color: #A5ACAF;" data-color="Gris"></button>
+                    <button class="color-option" style="background-color: #FFFFFF;" data-color="Blanco"></button>
+                    </div>
+                    <p class="product-description">Sudadera con capucha de los Eagles. Diseño térmico, ideal para clima frío y uso diario.</p>
+                    <button class="add-to-cart" data-id="12" data-name="Hoodie Philadelphia Eagles" data-price="69.99">Agregar al Carrito</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+            <p class="empty-cart-message" id="emptyCartMessage">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+
+    <div class="login-overlay" id="loginOverlay">
+        <div class="content-login">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-login login">
+                <h2>Sesion</h2>
+                <form action="#">
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                        <input type="text" id="usu" required>
+                        <label for="">Usuario:</label>
+                    </div>
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="key"></ion-icon></span>
+                        <input type="password" id="pass" required>
+                        <label for="">Contraseña:</label>
+                    </div>
+                    <button class="btn" type="button" onclick="inicioSesion()">Ingresar</button>
+                    <div class="login-register">
+                        <p>
+                            No esta registrado?
+                            <a href="#" class="register-link">Registrarme</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-login register">
+                <h2>Registro</h2>
+                <form action="#">
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="accessibility"></ion-icon></span>
+                        <input type="text" id="nombre" required>
+                        <label for="">Nombre Completo:</label>
+                    </div>
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="usuarioReg"></ion-icon></span>
+                        <input type="text" id="usuReg" required>
+                        <label for="">Usuario:</label>
+                    </div>
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="passReg" required>
+                        <label for="">Contraseña:</label>
+                    </div>
+                    <button class="btn" type="button" onclick="registrarUsuario()">Registrar</button>
+                    <div class="login-register">
+                        <p>
+                            Volver?
+                            <a href="#" class="login-link">Sesion</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/sesion.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

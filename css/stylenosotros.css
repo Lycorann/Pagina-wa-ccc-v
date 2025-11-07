@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+}
+.btn{
+    /*1rem=16px*/
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: rgb(199, 0, 0);
+    color: goldenrod;
+}
+.btn-primary:hover{
+    background-color: rgb(255, 53, 53);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.nosotros{
+    padding: 3rem 0;
+}
+.nosotros-title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.nosotros-title h2{
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.322), rgba(255, 187, 0, 0.533),rgba(255, 0, 0, 0.322));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nosotros-title p{
+    color: goldenrod;
+    font-size: 1.55rem;
+    max-width: 600;
+    margin:  0 auto;
+}
+.nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+.nosotros-card{
+    background: rgb(255, 155, 155);
+    backdrop-filter: blur(10px);
+    border: 1px dashed rgb(179, 0, 0);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: box-shadow 0.5s;
+}
+.nosotros-card:hover{
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.9);
+}
+.nosotros-icon{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.nosotros-card h3{
+    color: rgb(190, 0, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+}
+.nosotros-card p{
+    color: black;
+    margin-bottom: 1.6rem;
+    font-family: Arial;
+}
+/*Estilo para modal (despegable)*/
+.modal-checkbox{
+    display: none;
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 2000;
+}
+.modal-checkbox:checked + .modal-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content{
+    background: rgb(226, 226, 226);
+    border: 2px solid rgb(228, 0, 38);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: scale(0.8);
+    transition: transform(0.3s);
+}
+.modal-checkbox:checked + .modal-overlay .modal-content{
+    transform: scale(1);
+}
+.close-modal{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgb(219, 166, 33,0.2);
+    border: none;
+    cursor: pointer;
+    color: rgb(238, 0, 0);
+}
+.modal-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;    
+}
+.modal-header h3{
+    color: rgb(199, 0, 0);
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.modal-price{
+    color: rgb(216, 181, 27);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.modal-description{
+    color: rgb(99, 0, 0);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+.features-title{
+    color: #c71b1b;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    margin-bottom: 1rem;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+.feature-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.feature-dot{
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+}
+.feature-text{
+    color: #13347a;
+    font-size: 0.85rem;
+    font-family: georgia;
+}

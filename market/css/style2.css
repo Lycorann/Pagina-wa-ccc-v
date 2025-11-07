@@ -1,0 +1,203 @@
+body {
+    background: url('../img/fondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-login {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgba(64, 64, 64, 0.8);
+    border: 3px solid rgba(128, 128, 128, 0.5); 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(255, 107, 53, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.form-login {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-login h2 {
+    font-size: 2em;
+    color: #cfb000;
+    text-align: center;
+}
+
+.input-login {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #808080; 
+    margin: 30px 0;
+}
+
+.input-login label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #C0C0C0;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-login input:focus~label,
+.input-login input:valid~label {
+    top: -5px;
+}
+
+.input-login input {
+    width: 100%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: #fff; 
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-login .icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.8em;
+    color: #cfb000; 
+    line-height: 60px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #cfb000; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #000; 
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #cfb000; 
+    color: #fff; 
+}
+
+.login-register {
+    font-size: 1em;
+    color: #C0C0C0; 
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #cfb000; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #cfb000;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color: #000; 
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+}
+
+.form-login.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.content-login.active .form-login.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.form-login.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.content-login.active .form-login.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.content-login.active-login {
+    transform: scale(1);
+}
+
+
+/* Fondo oscuro cuando aparece el formulario */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Mostrar el overlay cuando está activo */
+.login-overlay.active {
+    display: flex;
+}
+
+/* Centrar el contenedor del login */
+.content-login {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgba(64, 64, 64, 0.8);
+    border: 3px solid rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(255, 218, 53, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.content-login.active-login {
+    transform: scale(1);
+}
+
+.icon-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
